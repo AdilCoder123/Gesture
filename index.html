@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <title>GWB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+      <h3 class="btn btn-info heading">
+      GWB beta access 1.1
+      </h3>
+      <h3>Full version coming next monday</h3>
+<h3>The gestures you can show</h3>
+      <br>
+      <span>&#9995;</span>
+      Hi gesture
+      <span>&#128076;</span>
+      Amazing gesture
+      
+      
+      <br>
+
+    
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Webcam view</label>
+        
+        <div id="camera"></div>
+        <br>
+        <button onclick="takephoto()" class="btn btn-warning">Take a photo</button>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <label>Prediction 1 </label>
+          <p class="emotion_name" id="result_emotion_name"></p>
+          <p class="emoji" id="emoji1"></p>
+         
+          </div>
+       
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+        <div id="result"></div>
+        <br>
+         <button onclick="checkemotion()" class="btn btn-success">Predict your emotion</button>
+
+        <br><br>
+
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
